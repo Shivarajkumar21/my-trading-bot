@@ -1,0 +1,61 @@
+2025-08-11 23:15:36 - src.config - ERROR - Error placing order: setup_logger() got an unexpected keyword argument 'log_level'
+2025-08-11 23:16:27 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-11 23:16:27 - src.config - CRITICAL - Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-11 23:16:27 - market_orders - ERROR - Error placing order: Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-11 23:18:27 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-11 23:18:28 - src.config - CRITICAL - Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-11 23:18:28 - src.config - CRITICAL - Failed to initialize Binance client: Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-11 23:18:28 - market_orders - ERROR - Error placing order: Failed to initialize Binance client: Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-11 23:52:46 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-11 23:52:46 - src.config - CRITICAL - Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-11 23:52:46 - market_orders - ERROR - Error placing order: Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-11 23:54:02 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-11 23:54:04 - src.config - CRITICAL - Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-11 23:54:04 - src.config - CRITICAL - Failed to initialize Binance client: Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-11 23:54:04 - market_orders - ERROR - Error placing order: Failed to initialize Binance client: Binance API connection test failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-12 00:08:46 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-12 00:08:47 - market_orders - ERROR - Failed to place market order: 'Client' object has no attribute 'futures_create_test_order'
+2025-08-12 00:09:34 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-12 00:09:36 - market_orders - ERROR - Failed to place market order: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-12 17:39:26 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-12 17:39:27 - market_orders - ERROR - Failed to place market order: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-12 17:42:58 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-12 17:42:58 - src.config - CRITICAL - Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-12 17:42:58 - market_orders - ERROR - Error placing order: Failed to initialize Binance client: Client.__init__() got an unexpected keyword argument 'base_url'
+2025-08-12 17:44:10 - market_orders - INFO - Placing BUY market order for 0.001 BTCUSDT
+2025-08-12 17:44:11 - market_orders - ERROR - Failed to place market order: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2025-08-12 18:17:31 - market_orders - INFO - Test order placed successfully
+2025-08-12 18:17:31 - market_orders - INFO - This was a test order - no actual order was placed
+2025-08-12 18:26:29 - src.config - ERROR - Failed to place order: setup_logger() got an unexpected keyword argument 'log_level'
+2025-08-12 18:28:06 - limit_orders - INFO - Placing BUY limit order for 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:28:06 - limit_orders - ERROR - Failed to place order: No module named 'spot_client'
+2025-08-12 18:29:39 - limit_orders - INFO - Placing BUY limit order for 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:29:39 - limit_orders - ERROR - Failed to place order: No module named 'spot_client'
+2025-08-12 18:30:49 - limit_orders - INFO - Placing BUY limit order for 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:30:49 - limit_orders - ERROR - Failed to place order: No module named 'spot_client'
+2025-08-12 18:34:03 - test_imports - INFO - Test logging message
+2025-08-12 18:39:15 - limit_orders - INFO - Placing BUY limit order for 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:39:15 - limit_orders - ERROR - Failed to place order: No module named 'spot_client'
+2025-08-12 18:39:56 - test_limit_order - INFO - Initializing Spot Client...
+2025-08-12 18:39:57 - test_limit_order - INFO - Spot Client initialized successfully!
+2025-08-12 18:39:57 - test_limit_order - INFO - Initializing Futures Client...
+2025-08-12 18:39:58 - test_limit_order - INFO - Futures Client initialized successfully!
+2025-08-12 18:39:58 - test_limit_order - INFO - Test parameters: BUY 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:41:33 - test_limit_order - INFO - Initializing Spot Client...
+2025-08-12 18:41:34 - test_limit_order - INFO - Spot Client initialized successfully!
+2025-08-12 18:41:34 - test_limit_order - INFO - Initializing Futures Client...
+2025-08-12 18:41:34 - test_limit_order - INFO - Futures Client initialized successfully!
+2025-08-12 18:41:34 - test_limit_order - INFO - Test parameters: BUY 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:41:34 - test_limit_order - INFO - Placing test limit order on Spot Testnet...
+2025-08-12 18:41:35 - test_limit_order - INFO - Test order placed successfully!
+2025-08-12 18:41:35 - test_limit_order - INFO - Order response: {}
+2025-08-12 18:43:23 - test_limit_order - INFO - Initializing Spot Client...
+2025-08-12 18:43:23 - test_limit_order - INFO - Spot Client initialized successfully!
+2025-08-12 18:43:23 - test_limit_order - INFO - Initializing Futures Client...
+2025-08-12 18:43:24 - test_limit_order - INFO - Futures Client initialized successfully!
+2025-08-12 18:43:24 - test_limit_order - INFO - Test parameters: BUY 0.001 BTCUSDT @ 50000.0
+2025-08-12 18:43:24 - test_limit_order - INFO - Placing test limit order on Spot Testnet...
+2025-08-12 18:43:24 - test_limit_order - INFO - Spot Test order placed successfully!
+2025-08-12 18:43:24 - test_limit_order - INFO - Spot Order response: {}
+2025-08-12 18:43:24 - test_limit_order - INFO - Placing test limit order on Futures Testnet...
+2025-08-12 18:43:24 - test_limit_order - WARNING - Note: Futures test order placement failed. This might be expected if using Spot API keys. Error: APIError(code=-2015): Invalid API-key, IP, or permissions for action
