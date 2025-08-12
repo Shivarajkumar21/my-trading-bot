@@ -3,6 +3,7 @@ import re
 from typing import Dict, List, Optional, Union
 from binance.client import Client as BinanceClient
 from binance.exceptions import BinanceAPIException, BinanceRequestException
+import os
 from .config import logger, API_KEY, API_SECRET
 
 class BinanceFuturesClient:
@@ -34,8 +35,9 @@ class BinanceFuturesClient:
             RuntimeError: If client initialization fails.
         """
         self.testnet = bool(testnet)
-        self._api_key = api_key or API_KEY
-        self._api_secret = api_secret or API_SECRET
+        # Try to use explicitly provided keys, then Futures keys, then fall back to Spot keys
+        self._api_key = api_key or os.getenv('FUTURES_API_KEY') or API_KEY
+        self._api_secret = api_secret or os.getenv('FUTURES_API_SECRET') or API_SECRET
         self._validate_credentials()
         self.client = self._initialize_client()
     

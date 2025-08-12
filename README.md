@@ -1,6 +1,23 @@
-# Binance Futures Order Bot
+# Binance Trading Bot
 
-A powerful CLI-based trading bot for Binance USDT-M Futures with support for multiple order types, position management, and risk controls.
+A powerful CLI-based trading bot for Binance Spot and Futures with support for multiple order types, including market orders, limit orders, and advanced order types.
+
+## Test Results
+
+### Successful Tests (Spot Test Network)
+- ✅ Client initialization
+- ✅ Test limit order placement
+- ✅ Input validation
+- ✅ Error handling
+- ✅ Futures API connection
+- ✅ IP whitelisting
+
+### Test Logs
+See `clean_test_logs.txt` for detailed test results.
+
+### Notes
+- Spot Test Network functionality verified
+- Futures testing requires separate API keys with Futures trading permissions
 
 ## Features
 

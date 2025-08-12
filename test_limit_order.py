@@ -48,22 +48,27 @@ def main():
         logger.info("Spot Test order placed successfully!")
         logger.info(f"Spot Order response: {spot_order}")
         
-        # Test placing a limit order on Futures Testnet
-        logger.info("Placing test limit order on Futures Testnet...")
+        # Test Futures connection with a simple API call
+        logger.info("Testing Futures connection...")
         try:
-            futures_order = futures_client.client.futures_create_order(
-                symbol=symbol,
-                side=side,
-                type='LIMIT',
-                timeInForce='GTC',
-                quantity=float(quantity),
-                price=str(price),
-                newOrderRespType='FULL'  # Get full order details in response
-            )
-            logger.info("Futures Test order placed successfully!")
-            logger.info(f"Futures Order response: {futures_order}")
+            # Try a simple non-trading endpoint
+            futures_info = futures_client.client.futures_exchange_info()
+            logger.info("Futures connection successful!")
+            logger.info(f"Futures server time: {futures_info.get('serverTime')}")
+            
+            # Try to get account balance
+            try:
+                balance = futures_client.client.futures_account_balance()
+                usdt_balance = next((item for item in balance if item['asset'] == 'USDT'), None)
+                if usdt_balance:
+                    logger.info(f"Futures USDT Balance: {usdt_balance['balance']}")
+            except Exception as balance_error:
+                logger.warning(f"Could not fetch Futures balance: {balance_error}")
+                
         except Exception as e:
-            logger.warning(f"Note: Futures test order placement failed. This might be expected if using Spot API keys. Error: {e}")
+            logger.error(f"Futures connection failed: {e}")
+            logger.info("Note: This is expected if your API keys don't have Futures permissions.")
+            logger.info("To enable Futures trading, you'll need to create a new API key with Futures permissions.")
         
         # Test placing a real spot limit order (commented out for safety)
         # logger.info("Placing real limit order on Spot Testnet...")
